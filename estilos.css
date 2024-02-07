@@ -1,0 +1,18 @@
+/* Selector por etiqueta */
+
+button {
+    background-color: aquamarine;
+    border: none;
+    color: gray;
+}
+
+body {
+    background-color:azure;
+
+}
+
+@media screen and (max-width: 767px){
+    button {
+        display: flex;
+    }
+}
