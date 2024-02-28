@@ -1,0 +1,26 @@
+body{
+    background-color: #9ff5da;
+    color: black;
+    
+}
+
+
+
+ion-title{
+    text-align: center;
+    font-size: 28px;
+}
+
+h1 {
+    text-align: center;
+    padding: 3px 10px;
+    border: powderblue 5px dashed;
+    border-radius: 20px;
+}
+
+ion-col {
+    background-color:powderblue;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+}
