@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto</title>
+  <!-- Importar los CDN de Ionic -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionic/6.0.1/css/ionic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ionic/6.0.1/js/ionic.bundle.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+<body ng-app="app">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">Presupuesto</h1>
+  </ion-header-bar>
+
+  <ion-content ng-controller="MainCtrl">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Tipo de Gasto</ion-label>
+        <ion-input type="text" ng-model="tipoGasto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Monto</ion-label>
+        <ion-input type="number" ng-model="monto"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button color="primary" ng-click="agregarGasto()">Agregar</ion-button>
+    <div id="listaGastos"></div>
+    <p>Total: <span id="total">{{ total }}</span></p>
+  </ion-content>
+
+  <script src="Practica4.js"></script>
+</body>
+</html>
+
