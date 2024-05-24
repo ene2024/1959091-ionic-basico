@@ -1,0 +1,16 @@
+input.ng-invalid.ng-dirty {
+    border-color: red;
+}
+
+input.ng-valid.ng-dirty {
+    border-color: green;
+}
+
+button[type="submit"] {
+    background-color: lightgray;
+}
+
+button[type="submit"]:disabled {
+    background-color: gray;
+    cursor: not-allowed
+}

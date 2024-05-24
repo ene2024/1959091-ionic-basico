@@ -1,0 +1,15 @@
+<div>
+  <h2>Alumnos</h2>
+  
+    <form (ngSubmit)="agregaAlumno()">
+     <ion-label>Nombre alumno: </ion-label> 
+      <ion-input required [(ngModel)]="alumno.nombre" placeholder="Ejemplo: Eduardo" name="nombre"></ion-input>
+      <ion-label>
+       <ion-checkbox [(ngModel)]="alumno.presente" name="presente"></ion-checkbox> Presente
+      </ion-label>
+      <div>
+        <button type="submit">Agregar</button>
+      </div>
+    </form>
+    
+</div>
